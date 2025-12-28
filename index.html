@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CÓMO ARMAR UNA PC GAMER EN CASA | ebooksycursospanish</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .pulse-button {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(102, 126, 234, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(102, 126, 234, 0); }
+        }
+        .checkmark {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-book text-2xl text-purple-600"></i>
+                    <span class="font-bold text-xl">ebooksycursospanish</span>
+                </div>
+                <button onclick="scrollToBuy()" class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 transition-colors animate-pulse">
+                    <i class="fas fa-shopping-cart mr-2"></i>Comprar Ahora - $4.99
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="mb-6 floating">
+                    <img src="https://i.imgur.com/wnX74UK.png" alt="Portada Ebook PC Gamer" class="mx-auto rounded-lg shadow-2xl floating" style="max-width: 200px;">
+                </div>
+                <div class="bg-red-600 text-white inline-block px-4 py-2 rounded-full mb-4 animate-pulse">
+                    <i class="fas fa-fire mr-2"></i>OFERTA LIMITADA - 75% DESCUENTO
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                    💻 CÓMO ARMAR UNA PC GAMER EN CASA
+                </h1>
+                <div class="text-2xl md:text-3xl font-semibold mb-8 text-yellow-300">
+                    Ahorra más del 75% y aprende desde cero
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-8">
+                    <p class="text-xl mb-6">
+                        ¿Quieres una PC gamer potente pero los precios te parecen exagerados?
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        Este ebook fue creado para personas sin experiencia previa que quieren aprender paso a paso cómo armar su propia computadora, elegir bien los componentes y no botar el dinero.
+                    </p>
+                    <p class="text-lg mt-4 font-semibold">
+                        Yo mismo te guío desde cero, como si estuviera a tu lado armando la PC contigo.
+                    </p>
+                </div>
+                <a href="https://pay.hotmart.com/E103561214Y?sck=HOTMART_PRODUCT_PAGE&off=pc03kjpb&hotfeature=32&bid=1766900386578" class="bg-yellow-400 text-gray-900 text-xl font-bold px-12 py-4 rounded-full hover:bg-yellow-300 transition-all transform hover:scale-105 pulse-button inline-block">
+                    <i class="fas fa-bolt mr-2"></i>QUIERO AHORRAR Y APRENDER
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You'll Learn -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4 gradient-text">🔥 ¿QUÉ APRENDERÁS CON ESTE EBOOK?</h2>
+                <p class="text-xl text-gray-600">Todo lo que necesitas para convertirte en un experto</p>
+            </div>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
+                <div class="flex items-start space-x-4 card-hover bg-gray-50 p-6 rounded-xl">
+                    <div class="checkmark text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
+                        <i class="fas fa-check text-sm"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-1">Componentes según tu presupuesto</h3>
+                        <p class="text-gray-600">Aprende a elegir los componentes correctos sin gastar de más</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4 card-hover bg-gray-50 p-6 rounded-xl">
+                    <div class="checkmark text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
+                        <i class="fas fa-check text-sm"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-1">Ryzen vs Intel vs Xeon</h3>
+                        <p class="text-gray-600">Diferencias reales y combos económicos que debes conocer</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4 card-hover bg-gray-50 p-6 rounded-xl">
+                    <div class="checkmark text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
+                        <i class="fas fa-check text-sm"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-1">Tarjetas gráficas usadas</h3>
+                        <p class="text-gray-600">Cómo comprar sin caer en estafas y obtener el mejor valor</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4 card-hover bg-gray-50 p-6 rounded-xl">
+                    <div class="checkmark text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
+                        <i class="fas fa-check text-sm"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-1">Importar desde EE.UU.</h3>
+                        <p class="text-gray-600">Guía completa para traer componentes a Colombia usando casilleros</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4 card-hover bg-gray-50 p-6 rounded-xl">
+                    <div class="checkmark text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
+                        <i class="fas fa-check text-sm"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-1">Armado detallado</h3>
+                        <p class="text-gray-600">Paso a paso, cable por cable, como si estuviera contigo</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4 card-hover bg-gray-50 p-6 rounded-xl">
+                    <div class="checkmark text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
+                        <i class="fas fa-check text-sm"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-1">Conexiones de la fuente</h3>
+                        <p class="text-gray-600">Dónde conectar cada cable sin miedo a equivocarte</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4 card-hover bg-gray-50 p-6 rounded-xl">
+                    <div class="checkmark text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
+                        <i class="fas fa-check text-sm"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-1">Evitar errores comunes</h3>
+                        <p class="text-gray-600">Los errores que todos cometen y cómo evitarlos fácilmente</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4 card-hover bg-gray-50 p-6 rounded-xl">
+                    <div class="checkmark text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1">
+                        <i class="fas fa-check text-sm"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-1">Presupuestos para todos</h3>
+                        <p class="text-gray-600">Opciones reales para presupuestos bajos, medios y normales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4 gradient-text">🧠 ¿PARA QUIÉN ES ESTE EBOOK?</h2>
+                <p class="text-xl text-gray-600">Diseñado para personas como tú</p>
+            </div>
+            <div class="max-w-5xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-white rounded-2xl p-8 shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6 text-green-600">✅ PERFECTO PARA TI SI:</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-center space-x-3">
+                                <i class="fas fa-user-graduate text-green-500 text-xl"></i>
+                                <span>Eres principiante y nunca has armado una PC</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fas fa-piggy-bank text-green-500 text-xl"></i>
+                                <span>Quieres ahorrar dinero en tu próxima PC</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fas fa-gamepad text-green-500 text-xl"></i>
+                                <span>Eres gamer y quieres entender tu equipo</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fas fa-laptop-code text-green-500 text-xl"></i>
+                                <span>Eres estudiante o creador de contenido</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fas fa-tools text-green-500 text-xl"></i>
+                                <span>Quieres ser técnico o aprender por hobby</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6 text-red-600">❌ NO NECESITAS:</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-center space-x-3">
+                                <i class="fas fa-times-circle text-red-500 text-xl"></i>
+                                <span>Conocimientos previos de hardware</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fas fa-times-circle text-red-500 text-xl"></i>
+                                <span>Herramientas especiales o costosas</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fas fa-times-circle text-red-500 text-xl"></i>
+                                <span>Ser experto en tecnología</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fas fa-times-circle text-red-500 text-xl"></i>
+                                <span>Título universitario</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fas fa-times-circle text-red-500 text-xl"></i>
+                                <span>Años de experiencia</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Included -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4 gradient-text">📘 ¿QUÉ INCLUYE?</h2>
+                <p class="text-xl text-gray-600">Todo lo que necesitas en un solo lugar</p>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-3 gap-8 mb-8">
+                    <div class="text-center">
+                        <img src="https://i.imgur.com/xFydgIf.jpeg" alt="Portada Ebook" class="mx-auto rounded-lg shadow-xl mb-4 transform hover:scale-105 transition-transform" style="max-width: 200px;">
+                        <p class="text-sm text-gray-600">Portada Oficial del Ebook</p>
+                    </div>
+                    <div class="md:col-span-2">
+                        <div class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-3xl p-8 h-full">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="flex items-center space-x-4">
+                                    <div class="bg-purple-600 text-white rounded-full w-12 h-12 flex items-center justify-center">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold text-lg">Ebook completo en PDF</h3>
+                                        <p class="text-gray-600">Descarga instantánea y acceso de por vida</p>
+                                    </div>
+                                </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-purple-600 text-white rounded-full w-12 h-12 flex items-center justify-center">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg">Explicaciones educativas</h3>
+                                <p class="text-gray-600">Aprende el porqué de cada paso</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-purple-600 text-white rounded-full w-12 h-12 flex items-center justify-center">
+                                <i class="fas fa-images"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg">Guía visual paso a paso</h3>
+                                <p class="text-gray-600">Imágenes detalladas de cada proceso</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-purple-600 text-white rounded-full w-12 h-12 flex items-center justify-center">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg">Consejos reales</h3>
+                                <p class="text-gray-600">Basados en años de experiencia práctica</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-purple-600 text-white rounded-full w-12 h-12 flex items-center justify-center">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg">Lenguaje sencillo</h3>
+                                <p class="text-gray-600">Sin tecnicismos complicados</p>
+                            </div>
+                        </div>
+                                <div class="flex items-center space-x-4">
+                                    <div class="bg-purple-600 text-white rounded-full w-12 h-12 flex items-center justify-center">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold text-lg">Compatible con todos</h3>
+                                        <p class="text-gray-600">Léelo en tu celular, tablet o PC</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4 gradient-text">🚀 RESULTADO FINAL</h2>
+                <p class="text-xl text-gray-600">Esto es lo que lograrás al terminar</p>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-3xl shadow-xl p-10">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="text-center">
+                            <div class="bg-gradient-to-r from-green-400 to-blue-500 text-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-shopping-cart text-3xl"></i>
+                            </div>
+                            <h3 class="font-bold text-xl mb-2">Sabrás exactamente qué comprar</h3>
+                            <p class="text-gray-600">Tomarás decisiones inteligentes y ahorrarás cientos de dólares</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-gradient-to-r from-purple-400 to-pink-500 text-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-hammer text-3xl"></i>
+                            </div>
+                            <h3 class="font-bold text-xl mb-2">Armarás tu PC con confianza</h3>
+                            <p class="text-gray-600">Sentirás seguridad en cada paso del proceso</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-gradient-to-r from-yellow-400 to-orange-500 text-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-user-tie text-3xl"></i>
+                            </div>
+                            <h3 class="font-bold text-xl mb-2">No dependerás de técnicos</h3>
+                            <p class="text-gray-600">Serás tú mismo el experto en tu equipo</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-gradient-to-r from-red-400 to-pink-500 text-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-sync text-3xl"></i>
+                            </div>
+                            <h3 class="font-bold text-xl mb-2">Podrás actualizar tu equipo</h3>
+                            <p class="text-gray-600">Tendrás el conocimiento para mejorar tu PC en el futuro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="buy" class="py-20 hero-gradient text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-12">
+                    <h2 class="text-4xl font-bold mb-6">📥 ¡Empieza hoy mismo!</h2>
+                    <p class="text-xl mb-8">
+                        Descárgalo y empieza hoy mismo a armar tu PC gamer desde cero.
+                    </p>
+                    <div class="mb-8">
+                        <div class="text-5xl font-bold mb-2">
+                            <span class="line-through text-gray-300">$20.00</span>
+                            <span class="text-yellow-300 ml-4">$4.99</span>
+                        </div>
+                        <p class="text-lg text-yellow-300">¡Ahorra $15.01 (75% DESCUENTO)!</p>
+                    </div>
+                    <div class="bg-red-600 text-white rounded-lg p-4 mb-6 inline-block">
+                        <p class="text-sm font-semibold mb-2">⏰ LA OFERTA TERMINA EN:</p>
+                        <p class="text-2xl font-bold" id="countdown">23:59:59</p>
+                    </div>
+                    <button onclick="handlePurchase()" class="bg-yellow-400 text-gray-900 text-xl font-bold px-12 py-5 rounded-full hover:bg-yellow-300 transition-all transform hover:scale-105 pulse-button mb-6">
+                        <i class="fas fa-rocket mr-2"></i>COMPRAR AHORA - $4.99
+                    </button>
+                    <div class="flex items-center justify-center space-x-6 text-sm">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-lock"></i>
+                            <span>Pago seguro</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-download"></i>
+                            <span>Descarga instantánea</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Garantía de satisfacción</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex items-center justify-center space-x-2 mb-4">
+                <i class="fas fa-book text-2xl text-purple-400"></i>
+                <span class="font-bold text-xl">ebooksycursospanish</span>
+            </div>
+            <p class="text-gray-400 mb-4">© 2024 ebooksycursospanish. Todos los derechos reservados.</p>
+            <div class="flex justify-center space-x-8 text-3xl">
+                <a href="https://wa.me/573123456789" target="_blank" class="text-green-400 hover:text-green-300 transition-colors">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://facebook.com/ebooksycursospanish" target="_blank" class="text-blue-600 hover:text-blue-500 transition-colors">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://instagram.com/ebooksycursospanish" target="_blank" class="text-pink-600 hover:text-pink-500 transition-colors">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToBuy() {
+            document.getElementById('buy').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function handlePurchase() {
+            window.location.href = "https://pay.hotmart.com/E103561214Y?sck=HOTMART_PRODUCT_PAGE&off=pc03kjpb&hotfeature=32&bid=1766900386578";
+        }
+
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.card-hover');
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(card);
+            });
+        });
+
+        // Cuenta regresiva real hasta el 1 de enero 2026 a las 00:00:00
+        function startCountdown() {
+            const endDate = new Date('2026-01-01T00:00:00-05:00'); // Hora Colombia
+
+            const updateCountdown = () => {
+                const now = new Date().getTime();
+                const distance = endDate - now;
+
+                if (distance < 0) {
+                    document.getElementById('countdown').textContent = 'OFERTA TERMINADA';
+                    document.getElementById('timer').textContent = 'TERMINADA';
+                    return;
+                }
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                const display = `${days}d ${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+                // Actualizar contador principal
+                const mainCountdown = document.getElementById('countdown');
+                if (mainCountdown) mainCountdown.textContent = display;
+
+                // Actualizar contador flotante
+                const timer = document.getElementById('timer');
+                if (timer) timer.textContent = display;
+            };
+
+            // Crear contador flotante más grande y bonito
+            const countdownElement = document.createElement('div');
+            countdownElement.className = 'fixed top-20 right-4 bg-red-600 text-white px-6 py-3 rounded-xl shadow-2xl z-50 animate-pulse font-bold text-lg';
+            countdownElement.innerHTML = '<i class="fas fa-fire mr-2"></i>¡OFERTA TERMINA EN! <br><span id="timer">Calculando...</span>';
+            document.body.appendChild(countdownElement);
+
+            // Actualizar cada segundo
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+        }
+
+        startCountdown();
+    </script>
+</body>
+</html>
